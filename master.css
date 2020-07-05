@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* html{
+    font-size: 62.5%;
+} */
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+}
+
+.navbar{
+    font-family: 'Nunito', sans-serif;
+    background-image: linear-gradient(135deg, #b80081 0%, #764ba2 100%);
+    width: 100%;
+}
+
+.nav-item{
+    margin-left :2rem;
+    margin-right:2rem;
+}
+
+
+.links{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.75s ease;
+}
+
+.links-active{
+    background-color: rgb(145, 0, 125);
+}
+
+.links:hover{
+    color: rgb(179, 179, 179);
+   
+}
+
+
+
+/* ANIMATION */
+
+#Stars{
+    animation: stars 2s linear alternate infinite;
+}
+
+@keyframes stars{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#player{
+    animation: player 1s linear alternate infinite ;
+    
+}
+
+@keyframes player{
+    from{
+        transform: translate(0px,-10px);
+        /* transform: translateY(0px);
+        transform: translateX(0px); */
+    }
+    to{
+        transform: translate(-20px,10px);
+        /* transform: translateY(20px);
+        transform: translateX(20px); */
+    }
+}
+
+#Ellipse7{
+    animation: arrow 1.2s linear alternate infinite ;
+}
+#Arrow1{
+    animation: arrow 1.2s linear alternate infinite ;
+}
+
+@keyframes arrow{
+    from{   
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(20px);
+    }
+}
+
+#Logo{
+    
+    animation: logo 2s ease;
+}
+
+#Text{
+    
+    animation: logo 3s ease;
+    
+}
+
+@keyframes logo{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* HERO SECTION */
+
+.hero{
+    height: 130vh;
+   
+   
+
+}
+.hero svg{
+    width: 100%;
+    
+}
+
+h1{
+    font-size: 5rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+#aboutus h3{
+    font-size: 3rem;
+    color: #b80081;
+}
+
+#aboutus p{
+    font-size: 20px;
+}
+
+#aboutus img{
+    width: 100%;
+}
+
+
+
+.question p{
+    
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+}
+
+.question h3{
+    padding-top: 20px;
+    font-size: 30px;
+    color: #b80081;
+}
+
+
+
+#tournament{
+    background-image: linear-gradient(135deg, #b80081 0%, #764ba2 100%);
+    height: 100vh;
+}
+
+#tournament .container{
+    display: flex;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#tournament h1{
+    font-size: 200px;
+}
+
+#tournament h2{
+    font-size: 50px;
+}
+
+#jason{
+    margin-left: 18%;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(135deg, #b80081 0%, #764ba2 100%);
+    color: white;
+    height: 37vh;
+    margin-top: 100px;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+}
+
+footer p{
+    font-size: medium;
+}
+
+footer img{
+    width: 50px;
+}
+
